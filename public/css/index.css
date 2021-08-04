@@ -1,0 +1,104 @@
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home h2 {
+    margin-top: 0;
+
+    font-weight: 400;
+    color: #FFF;
+}
+
+.opcoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease-in-out;
+}
+
+.botao_normal {
+    width: 100px;
+    margin: 0 10px;
+    padding: 4px;
+
+    border: none;
+    border-radius: 4px;
+
+    font-size: 20px;
+    font-family: 'Acme', sans-serif;
+
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.botao_normal:hover {
+    transform: scale(1.2);
+}
+
+.botao_normal p {
+    margin: 0;
+    background: -webkit-linear-gradient(#1B75B2, #24ADCD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.equation_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 0;
+
+    opacity: 0;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+}
+
+.equation_menu label {
+    display: flex;
+    justify-content: space-between;
+
+    width: 310px;
+    margin: 10px 0;
+
+    font-size: 32px;
+    color: #FFF;
+}
+
+.equation_menu input[type=text] {
+    padding: 8px;
+
+    border-radius: 4px;
+    border: none;
+    background-color: #EFEFEF;
+
+    font-size: 20px;
+    font-family: 'Acme';
+}
+
+.equation_menu input[type=text]:focus {
+    outline: none;
+}
+
+.botoes {
+    margin-top: 20px;
+}
+
+.resultados {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.resultado {
+    width: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+}

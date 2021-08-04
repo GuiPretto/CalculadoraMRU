@@ -1,0 +1,18 @@
+footer {
+    margin: 0 0 24px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 24px;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(255,255,255);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

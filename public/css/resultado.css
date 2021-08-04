@@ -1,0 +1,32 @@
+#resultado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: #FFF;
+}
+
+#resultado h2 {
+    margin-bottom: 0;
+
+    font-weight: 400;
+    font-size: 36px;
+}
+
+#resultado a {
+    background-color: #EFEFEF;
+    text-decoration: none;
+}
+
+#resultado > p {
+    margin: 64px 0;
+
+    text-decoration: underline  ;
+
+    font-size: 28px;
+}
+
+#resultado p {
+    text-align: center;
+}

@@ -1,0 +1,46 @@
+<div id="home">
+    <div class="opcoes">
+        <h2>O que deseja saber?</h2>
+        <div>
+            <button class="botao_normal" onclick="abrirMenu('distancia')"><p>Distância</p></button>
+            <button class="botao_normal" onclick="abrirMenu('tempo')"><p>Tempo</p></button>
+            <button class="botao_normal" onclick="abrirMenu('velocidade')"><p>Velocidade</p></button>
+        </div>
+    </div>
+    <form action="/resultado" method="POST" class="equation_menu" id="distancia">
+        <h2>Para saber a Distância(s), serão necessários a Velocidade(v) e o Tempo(t):</h2>
+        <div class="resultados">
+            <label>v (m/s) <input required onkeypress="return apenasNumeros(event)" type="text" placeholder="Velocidade (m/s)" name="velocidade" /></label>
+            <label>t (s) <input required onkeypress="return apenasNumeros(event)" type="text" placeholder="Tempo (s)" name="tempo" /></label>
+            <input type="hidden" name="tipo" value="distancia"/>
+        </div>
+        <div class="botoes">
+            <button type="button" class="botao_normal" onclick="voltarMenuOpcoes()"><p>Voltar</p></button>
+            <button type="submit" class="botao_normal"><p>Calcular</p></button>
+        </div>
+    </form>
+    <form action="/resultado" method="POST" class="equation_menu" id="tempo">
+        <h2>Para saber o Tempo(t), serão necessárias a Distância(s) e a Velocidade(v):</h2>
+        <div class="resultados">
+            <label>s (m) <input required onkeypress="return apenasNumeros(event)" type="text" placeholder="Distância (m)" name="distancia" /></label>
+            <label>v (m/s) <input required onkeypress="return apenasNumeros(event)" type="text" placeholder="Velocidade (m/s)" name="velocidade" /></label>
+            <input type="hidden" name="tipo" value="tempo"/>
+        </div>
+        <div class="botoes">
+            <button type="button" class="botao_normal" onclick="voltarMenuOpcoes()"><p>Voltar</p></button>
+            <button type="submit" class="botao_normal"><p>Calcular</p></button>
+        </div>
+    </form>
+    <form action="/resultado" method="POST" class="equation_menu" id="velocidade">
+        <h2>Para saber a Velocidade(v), serão necessários a Distância(s) e o Tempo(t):</h2>
+        <div class="resultados">
+            <label>s (m) <input required onkeypress="return apenasNumeros(event)" type="text" placeholder="Distância (m)" name="distancia" /></label>
+            <label>t (s) <input required onkeypress="return apenasNumeros(event)" type="text" placeholder="Tempo (s)" name="tempo" /></label>
+            <input type="hidden" name="tipo" value="velocidade"/>
+        </div>
+        <div class="botoes">
+            <button type="button" class="botao_normal" onclick="voltarMenuOpcoes()"><p>Voltar</p></button>
+            <button type="submit" class="botao_normal"><p>Calcular</p></button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,17 @@
+<div id="resultado">
+    <h2>Resultado da operação:</h2>
+    <p>
+        <% switch (tipo) {
+            case 'distancia': %>
+                Distância: <%- resultado %>m
+            <% break;
+            case 'tempo': %>
+                Tempo: <%- resultado %>s
+            <% break;
+            case 'velocidade': %>
+                Velocidade: <%- resultado %>m/s
+            <% break;
+        } %>
+    </p>
+    <a class="botao_normal" href="/"><p>Voltar</p></a>
+</div>

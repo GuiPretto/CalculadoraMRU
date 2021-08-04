@@ -1,0 +1,9 @@
+header {
+    margin: 48px 0 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 48px;
+    color: white;
+}
