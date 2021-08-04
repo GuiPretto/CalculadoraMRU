@@ -14,7 +14,7 @@ liveReloadServer.server.once("connection", () => {
 });
 
 const app = express()
-const port = 8080
+const port = 3000
 
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(connectLiveReload())
