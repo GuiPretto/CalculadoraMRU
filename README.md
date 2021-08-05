@@ -1,5 +1,5 @@
 # CalculadoraMRU
-Calculadora do MRU feita em ExpressJS, utilizando EJS, Livereload e Nodaemon.
+Calculadora de IMC feita em ExpressJS, utilizando EJS, Livereload e Nodaemon.
 
 ## Instalação
 
